@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		94301BD11F338CBA00975869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94301BD01F338CBA00975869 /* AppDelegate.swift */; };
-		94301BD31F338CBA00975869 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 94301BD21F338CBA00975869 /* GameScene.sks */; };
 		94301BD51F338CBA00975869 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 94301BD41F338CBA00975869 /* Actions.sks */; };
 		94301BD71F338CBA00975869 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94301BD61F338CBA00975869 /* GameScene.swift */; };
 		94301BD91F338CBA00975869 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94301BD81F338CBA00975869 /* GameViewController.swift */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		94301BCD1F338CBA00975869 /* SpaceInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94301BD01F338CBA00975869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94301BD21F338CBA00975869 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		94301BD41F338CBA00975869 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		94301BD61F338CBA00975869 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		94301BD81F338CBA00975869 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				94301BD01F338CBA00975869 /* AppDelegate.swift */,
-				94301BD21F338CBA00975869 /* GameScene.sks */,
 				94301BD41F338CBA00975869 /* Actions.sks */,
 				94301BD61F338CBA00975869 /* GameScene.swift */,
 				94301BD81F338CBA00975869 /* GameViewController.swift */,
@@ -202,6 +199,7 @@
 				TargetAttributes = {
 					94301BCC1F338CBA00975869 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 3L9UTQR92B;
 						ProvisioningStyle = Automatic;
 					};
 					94301BE61F338CBA00975869 = {
@@ -242,7 +240,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94301BDC1F338CBA00975869 /* Main.storyboard in Resources */,
-				94301BD31F338CBA00975869 /* GameScene.sks in Resources */,
 				94301BDE1F338CBA00975869 /* Assets.xcassets in Resources */,
 				94301BE11F338CBA00975869 /* LaunchScreen.storyboard in Resources */,
 				94301BD51F338CBA00975869 /* Actions.sks in Resources */,
@@ -424,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3L9UTQR92B;
 				INFOPLIST_FILE = SpaceInvaders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iDTech.-Lina-.SpaceInvaders";
@@ -436,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3L9UTQR92B;
 				INFOPLIST_FILE = SpaceInvaders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iDTech.-Lina-.SpaceInvaders";
@@ -517,6 +516,7 @@
 				94301BFD1F338CBA00975869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94301BFE1F338CBA00975869 /* Build configuration list for PBXNativeTarget "SpaceInvadersTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +525,7 @@
 				94301C001F338CBA00975869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94301C011F338CBA00975869 /* Build configuration list for PBXNativeTarget "SpaceInvadersUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +534,7 @@
 				94301C031F338CBA00975869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
