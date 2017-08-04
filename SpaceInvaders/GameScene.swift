@@ -15,6 +15,20 @@ class GameScene: SKScene {
     private var spinnyNode : SKShapeNode?
     let hero = SKSpriteNode(imageNamed: "Spaceship")
     
+    //Gesture Recognizer Funcs
+    func swipedUp(sender: UISwipeGestureRecognizer) {
+        print("Up")
+    }
+    func swipedDown(sender: UISwipeGestureRecognizer) {
+        print("Down")
+    }
+    func swipedLeft(sender: UISwipeGestureRecognizer) {
+        print("Left")
+    }
+    func swipedRight(sender: UISwipeGestureRecognizer) {
+        print("Right")
+    }
+    
     override func didMove(to view: SKView) {
         
         backgroundColor = SKColor.black
@@ -29,8 +43,25 @@ class GameScene: SKScene {
         
         addChild(hero)
         
+        
+    //Gesture Recognizer
+        let swipeUp: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedUp))
+        swipeUp.direction = .up
+        view.addGestureRecognizer(swipeUp)
+        
+        let swipeDown: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedDown))
+        swipeDown.direction = .down
+        view.addGestureRecognizer(swipeDown)
+        
+        let swipeLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedLeft))
+        swipeLeft.direction = .left
+        view.addGestureRecognizer(swipeLeft)
+        
+        let swipeRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedRight))
+        swipeRight.direction = .right
+        view.addGestureRecognizer(swipeRight)
+        
     }
-    
     
     func touchDown(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
